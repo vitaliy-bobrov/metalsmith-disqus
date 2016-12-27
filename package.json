@@ -1,0 +1,24 @@
+{
+  "name": "metalsmith-disqus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitaliy-bobrov/metalsmith-disqus.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "disqus",
+    "comments"
+  ],
+  "author": "Vitaliy Bobrov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitaliy-bobrov/metalsmith-disqus/issues"
+  },
+  "homepage": "https://github.com/vitaliy-bobrov/metalsmith-disqus#readme"
+}
