@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/vitaliy-bobrov/metalsmith-disqus/issues"
   },
-  "homepage": "https://github.com/vitaliy-bobrov/metalsmith-disqus#readme"
+  "homepage": "https://github.com/vitaliy-bobrov/metalsmith-disqus#readme",
+  "devDependencies": {
+    "debug": "^2.5.2"
+  },
+  "dependencies": {
+    "htmlparser2": "^3.9.2"
+  }
 }
