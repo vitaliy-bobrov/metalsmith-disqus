@@ -25,6 +25,7 @@
     "debug": "^2.5.2"
   },
   "dependencies": {
-    "htmlparser2": "^3.9.2"
+    "cheerio": "^0.22.0",
+    "transliteration": "^1.2.1"
   }
 }
