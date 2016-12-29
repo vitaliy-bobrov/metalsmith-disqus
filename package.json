@@ -16,7 +16,7 @@
     "comments"
   ],
   "author": "Vitaliy Bobrov",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vitaliy-bobrov/metalsmith-disqus/issues"
   },
