@@ -66,7 +66,7 @@ Metalsmith(__dirname)
   ---
   ```
 
-  Also you can add Disqus DNS prefetch for some entry page, for example homepage. It will speed up disqus scripts loading. To enable just add `disqus-dns-prefetch: true` to page metadata.
+  To add Disqus DNS prefetch for entry page, for example homepage just add `disqus-dns-prefetch: true` to page metadata. It will speed up disqus scripts loading.
     Example:
 
   ```yaml
@@ -74,6 +74,18 @@ Metalsmith(__dirname)
   title: My home page
   draft: false
   disqus-dns-prefetch: true
+  ---
+  ```
+
+  To add Disqus scripts prefetch for page just add `disqus-prefetch-widget: true` (for comments widget script) or `disqus-prefetch-counter: true` (for counter script) to page metadata. It will speed up disqus scripts loading.
+    Example:
+
+  ```yaml
+  ---
+  title: My home page
+  draft: false
+  disqus-prefetch-widget: true
+  disqus-prefetch-counter: true
   ---
   ```
 
