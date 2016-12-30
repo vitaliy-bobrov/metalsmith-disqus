@@ -25,20 +25,23 @@ Metalsmith(__dirname)
 
   Examples:
 
-  Page with comments template
+  Page with comments template using handlebars:
   ```xml
   <p>Your page markup<p>
-
+  {{#if this.comments }}
   <!-- Comments widget will be rendered in this element -->
   <div id="disqus_thread"></div>
+  {{/if}}
   ```
 
-  Page with counters template:
+  Page with counters template using handlebars:
   ```xml
   <p>Your page markup<p>
 
+  {{#if this.comments }}
   <!-- Comments counter will be rendered in this element -->
-  <span class="disqus-comment-count" data-disqus-key="{{post.title}}"></span>
+  <span class="disqus-comment-count" data-disqus-key="{{this.title}}"></span>
+  {{/if}}
   ```
 
   To enable comments for page just add `comments: true` to page metadata.
@@ -60,6 +63,17 @@ Metalsmith(__dirname)
   title: Post
   draft: false
   comments-counter: true
+  ---
+  ```
+
+  Also you can add Disqus DNS prefetch for some entry page, for example homepage. It will speed up disqus scripts loading. To enable just add `disqus-dns-prefetch: true` to page metadata.
+    Example:
+
+  ```yaml
+  ---
+  title: My home page
+  draft: false
+  disqus-dns-prefetch: true
   ---
   ```
 
