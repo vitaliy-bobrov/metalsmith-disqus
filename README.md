@@ -4,7 +4,7 @@
 
 ## Installation
 
-    $ npm install metalsmith-disqus
+    $ npm install --save-dev metalsmith-disqus
 
 ## Usage
 
@@ -15,6 +15,7 @@ const Metalsmith = require('metalsmith');
 const disqus     = require('metalsmith-disqus');
 
 Metalsmith(__dirname)
+  ...
   .use(disqus({
     siteurl: 'my-site.com',
     shortname: 'my-site'
@@ -28,7 +29,7 @@ Metalsmith(__dirname)
   Page with comments template using handlebars:
   ```xml
   <p>Your page markup<p>
-  {{#if this.comments }}
+  {{#if comments }}
   <!-- Comments widget will be rendered in this element -->
   <div id="disqus_thread"></div>
   {{/if}}
@@ -38,9 +39,9 @@ Metalsmith(__dirname)
   ```xml
   <p>Your page markup<p>
 
-  {{#if this.comments }}
+  {{#if comments }}
   <!-- Comments counter will be rendered in this element -->
-  <span class="disqus-comment-count" data-disqus-key="{{this.title}}"></span>
+  <span class="disqus-comment-count" data-disqus-key="{{title}}"></span>
   {{/if}}
   ```
 
@@ -50,7 +51,6 @@ Metalsmith(__dirname)
   ```yaml
   ---
   title: Hello World
-  draft: false
   comments: true
   ---
   ```
@@ -61,7 +61,6 @@ Metalsmith(__dirname)
   ```yaml
   ---
   title: Post
-  draft: false
   comments-counter: true
   ---
   ```
@@ -72,7 +71,6 @@ Metalsmith(__dirname)
   ```yaml
   ---
   title: My home page
-  draft: false
   disqus-dns-prefetch: true
   ---
   ```
@@ -83,7 +81,6 @@ Metalsmith(__dirname)
   ```yaml
   ---
   title: My home page
-  draft: false
   disqus-prefetch-widget: true
   disqus-prefetch-counter: true
   ---
@@ -98,7 +95,7 @@ Counter class name selector can be configured with options.
 
   Default: ''
 
-  Your site url with trailing `/`, used to generate page url in Disqus configuration.
+  Your site url, used to generate page url in Disqus configuration.
 
 ### shortname - **Required**
   Type: String
