@@ -1,6 +1,9 @@
 # metalsmith-disqus
 
+[![npm version](https://badge.fury.io/js/metalsmith-disqus.svg)](https://badge.fury.io/js/metalsmith-disqus)
+
   A Metalsmith plugin that adds [Disqus](https://disqus.com/) commenting widget and counter scripts.
+  For more information you can read [article](https://vitaliy-bobrov.github.io/blog/adding-comments-to-metalsmith/).
 
 ## Installation
 
