@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-disqus",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Disqus comments plugin for Metalsmith.",
   "main": "lib/index.js",
   "scripts": {
