@@ -15,17 +15,17 @@
     "disqus",
     "comments"
   ],
-  "author": "Vitaliy Bobrov",
+  "author": "Vitaliy Bobrov <bobrov1989@gmail.com> (https://vitaliy-bobrov.github.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vitaliy-bobrov/metalsmith-disqus/issues"
   },
   "homepage": "https://github.com/vitaliy-bobrov/metalsmith-disqus#readme",
   "devDependencies": {
-    "debug": "^2.5.2"
+    "debug": "^2.6.3"
   },
   "dependencies": {
     "cheerio": "^0.22.0",
-    "transliteration": "^1.2.1"
+    "transliteration": "^1.5.3"
   }
 }
