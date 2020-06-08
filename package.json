@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/vitaliy-bobrov/metalsmith-disqus#readme",
   "devDependencies": {
-    "debug": "^2.6.3"
+    "debug": "^4.1.1"
   },
   "dependencies": {
-    "cheerio": "^0.22.0",
-    "transliteration": "^1.5.3"
+    "cheerio": "^1.0.0-rc.3",
+    "transliteration": "^2.1.11"
   }
 }
